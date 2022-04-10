@@ -1,0 +1,195 @@
+* {
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background-color: #f4f5f7;
+}
+
+header {
+   width: 100%;
+   padding-left: 35px;
+   padding-right: 35px;
+}
+
+.main-inform {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo {
+   max-width: 130px;
+   margin: 5px;
+}
+
+h1 {
+   text-transform: uppercase;
+   color: #eca544;
+   text-align: center;
+   margin: 5px;
+   font-size: 50px;
+   text-shadow: 5px 5px 2px rgb(170, 170, 170);
+}
+
+.second-inform {
+   margin-top: 5px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.text-information {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   max-width: 1200px;
+}
+
+.invited-text {
+   padding: 10px;
+   color: #ca8523;
+   font-size: 22px;
+   font-weight: bold;
+   text-align: left;
+}
+
+.explain-text {
+   padding: 10px;
+   text-align: left;
+   color: #bd7715;
+   font-size: 20px;
+   font-style: italic;
+   line-height: 25px;
+}
+
+.univer-logo {
+   max-width: 220px;
+   border-radius: 50%;
+   padding: 5px;
+}
+
+.third-inform {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-top: 10px;
+   align-items: center;
+}
+
+.condition-text, .contact-inform {
+   font-size: 20px;
+   font-weight: bold;
+   padding: 30px 0 30px 0;
+   line-height: 30px;
+   text-align: left;
+   margin: 10px;
+}
+
+.photos {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 850px;
+}
+
+.food-photo {
+   max-width: 400px;
+   margin: 10px;
+   box-shadow: 0 0 10px rgba(44, 44, 44, 0.7);
+   transition-duration: 500ms;
+}
+
+.food-photo:hover {
+   transform: scale(1.05);
+}
+
+.button {
+   text-decoration: none;
+   font-weight: bold;
+   background-image: linear-gradient(to bottom, #6dd109, #40720e);
+   margin: 10px;
+   font-size: 20px;
+   line-height: 20px;
+   padding: 10px;
+   color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(44, 44, 44, 0.7);
+}
+
+.button:hover {
+   background-image: linear-gradient(to bottom, #40720e, #6dd109);
+}
+
+.button:active {
+   box-shadow: inset 0 0 10px rgba(44, 44, 44, 0.7);
+}
+
+.attention {
+   color: red;
+}
+
+.my-contacts {
+   color: #eca544;
+   font-style: italic;
+}
+
+ul {
+   margin-left: 20px;
+}
+
+.last-information {
+   text-align: center;
+   color: white;
+   background-color: #262626;
+   font-size: 16px;
+   line-height: 25px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   letter-spacing: 1px;
+   margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1374px) {
+   .third-inform-text {
+      text-align: center;
+   }
+
+   .condition-text, .contact-inform {
+      text-align: center;
+   }
+
+   ul {
+      list-style: none;
+   }
+}
+
+
+@media screen and (max-width: 625px) {
+ .invited-text, .explain-text{
+      text-align: center;
+   }
+}
+
+
+   @media screen and (max-width: 434px) {
+
+      .food-photo {
+         max-width: 300px;
+         margin: 10px;
+         box-shadow: 0 0 10px rgba(44, 44, 44, 0.7);
+         transition-duration: 500ms;
+      }
+   }
