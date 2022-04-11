@@ -11,15 +11,13 @@ body {
    background-position: center;
    background-size: cover;
    position: relative;
-   z-index: 1;
+   z-index: 10;
 }
 
 header {
    width: 100%;
    padding-left: 35px;
    padding-right: 35px;
-   position: relative;
-   z-index: 1;
 }
 
 .main-inform {
@@ -75,11 +73,6 @@ h1 {
    font-size: 20px;
    font-style: italic;
    line-height: 25px;
-}
-
-.body-container {
-   position: relative;
-   z-index: 1;
 }
 
 .univer-logo {
@@ -169,13 +162,10 @@ ul {
    padding-bottom: 15px;
    letter-spacing: 1px;
    margin-top: 10px;
-   position: relative;
-   z-index: 1;
 }
 
 .preloader_monitor {
    width: 100vw;
-   height: 100vh;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
