@@ -148,6 +148,16 @@ h1 {
    font-style: italic;
 }
 
+p{
+   max-width: 500px;
+   margin-top: 10px;
+   font-style: italic;
+}
+
+p>span{
+   text-decoration: underline;
+}
+
 ul {
    margin-left: 20px;
 }
