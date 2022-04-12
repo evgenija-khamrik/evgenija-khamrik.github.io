@@ -154,6 +154,7 @@ h1 {
    animation-iteration-count: infinite;
    z-index: -1;
    border: 2px solid green;
+   pointer-events: none;
 }
 
 .button::before{
@@ -173,6 +174,7 @@ h1 {
    z-index: -1;
    border: 2px solid #40720e;
    animation-delay: 500ms;
+   pointer-events: none;
 }
 
 @keyframes puls {
