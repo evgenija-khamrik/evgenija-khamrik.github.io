@@ -125,14 +125,73 @@ h1 {
    margin: 10px;
    font-size: 20px;
    line-height: 20px;
-   padding: 10px;
+   padding: 15px;
    color: white;
-   border-radius: 10px;
+   border-radius: 50%;
    box-shadow: 0 0 10px rgba(44, 44, 44, 0.7);
+   position: relative;
+   z-index: 100;
+   animation-name: color;
+   animation-timing-function: linear;
+   animation-play-state: running;
+   animation-duration: 1600ms;
+   animation-iteration-count: infinite;
+}
+
+.button::after{
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   border-radius: 50%;
+   animation-name: puls;
+   animation-timing-function: linear;
+   animation-play-state: running;
+   animation-duration: 1600ms;
+   animation-iteration-count: infinite;
+   z-index: -1;
+   border: 2px solid green;
+}
+
+.button::before{
+   content: "";
+   display: block;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   border-radius: 50%;
+   animation-name: puls;
+   animation-timing-function: linear;
+   animation-play-state: running;
+   animation-duration: 1600ms;
+   animation-iteration-count: infinite;
+   z-index: -1;
+   border: 2px solid #40720e;
+   animation-delay: 500ms;
+}
+
+@keyframes puls {
+   0% {
+      transform: scale(1);
+      opacity: 1;
+      border: 2px solid green;
+   }
+
+   100% {
+      transform: scale(1.9);
+      opacity: 0;
+      border: 0;
+   }
 }
 
 .button:hover {
    background-image: linear-gradient(to bottom, #40720e, #6dd109);
+   animation-play-state: paused;
 }
 
 .button:active {
